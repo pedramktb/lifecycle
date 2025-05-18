@@ -28,7 +28,7 @@ import (
 )
 
 func main() {
-	ctx, cancelFunc, shutdownErrsChan := lifecycle.NewContext(time.Minute)
+    ctx, cancelFunc, shutdownErrsChan := lifecycle.NewContext(time.Minute)
 
     // ...
     db := database.New(ctx)
